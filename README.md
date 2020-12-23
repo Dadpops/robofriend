@@ -15,5 +15,27 @@ const Card = ({ name, email, id }) => {
 }
 ```
 
+Card List Component to populate Cards with contacts from database. At the moment it is currently using a predisposed list of names
+```javascript
+const CardList = ({ robots }) => {
+    return (
+    <div>
+      {
+        robots.map((user, i) => {
+            return (
+                <Card 
+                  key={i} 
+                  id={robots[i].id} 
+                  name={robots[i].name} 
+                  email={robots[i].email}
+                />
+            );
+        })
+      }
+    </div>
+    );
+}
+```
+
 
  
