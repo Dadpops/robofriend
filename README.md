@@ -1,6 +1,6 @@
 Contact App Template Made with React
 
-Features individual Card Components
+---Features individual Card Components:
 ```javascript
 const Card = ({ name, email, id }) => {
     return (
@@ -15,7 +15,7 @@ const Card = ({ name, email, id }) => {
 }
 ```
 
-Card List Component to populate Cards with contacts from database. At the moment it is currently using a predisposed list of names
+---Card List Component to populate Cards with contacts from database. At the moment it is currently using a predisposed list of names:
 ```javascript
 const CardList = ({ robots }) => {
     return (
@@ -33,6 +33,22 @@ const CardList = ({ robots }) => {
         })
       }
     </div>
+    );
+}
+```
+
+---Search Box for narrowing down contacts dynamically as letters are input(searches in no particular order. I.e. if you type 'A' any name with an 'A' will be present)
+```javascript
+const SearchBox = ({ searchfield, searchChange }) => {
+    return (   
+        <div className='pa2'>
+            <input 
+            className='pa3 ba ba--green bg-lightest-blue'
+            type='search' 
+            placeholder='Search Robots'
+            onChange={searchChange}
+            />
+        </div>
     );
 }
 ```
