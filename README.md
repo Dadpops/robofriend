@@ -59,8 +59,11 @@ const SearchBox = ({ searchfield, searchChange }) => {
 
 
 Future Additions:
+
 ---Database connectivity
+
 ---User Registration & Authentication
+
 ---Customizable color schemes and fonts
 
 
