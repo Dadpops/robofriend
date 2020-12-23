@@ -53,5 +53,16 @@ const SearchBox = ({ searchfield, searchChange }) => {
 }
 ```
 
+---Uses tachyons import for majority of CSS styling
+---Uses a Robot image API that randomizes robot image
+---Cards are inside scrollable box in middle of screen
+
+
+Future Additions:
+---Database connectivity
+---User Registration & Authentication
+---Customizable color schemes and fonts
+
+
 
  
